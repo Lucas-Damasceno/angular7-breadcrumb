@@ -1,0 +1,5 @@
+<div class="ideas-breadcrumb-container">
+    <ng-container *ngFor="let node of breadcrumbArray">
+        <span class="ideas-breadcrumb-item"><a [routerLink]="node.path"> {{ node.label }} </a></span>
+    </ng-container>
+</div>

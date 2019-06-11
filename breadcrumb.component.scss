@@ -1,0 +1,37 @@
+.ideas-breadcrumb-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+.ideas-breadcrumb-item{
+    font-size: 1rem;
+}
+.ideas-breadcrumb-item::before{
+    content: "/";
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.ideas-breadcrumb-item:first-child::before{
+    content: "";
+}
+.ideas-breadcrumb-item{
+    a{
+        text-decoration: underline;
+    }
+}
+.ideas-breadcrumb-item:last-child{
+    a{
+        font-size: 2rem;
+        color: #000000;
+        text-decoration: none;
+    }
+    a:hover{
+        border: 0;
+    }
+}
+
+.ideas-breadcrumb-item:last-child::before{
+    content: "/";
+    font-size: 2rem;
+    color: #000000
+}
